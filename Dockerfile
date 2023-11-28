@@ -3,7 +3,7 @@ FROM ubuntu:latest
 # Mise à jour des paquets et installation des dépendances
 RUN apt-get update -yq \
     && apt-get upgrade -yq \
-    && apt-get install curl wget nano -yq \
+    && apt-get install curl wget nano unzip screen -yq \
     && apt-get clean -y
 
 WORKDIR /root
